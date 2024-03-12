@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ubuntu-font {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* Hide scrollbars in WebKit (Chrome, Safari) */
+.hideScrollbar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* Hide scrollbars in Firefox */
+.hideScrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.shadow-custom{
+  box-shadow: 1px 2px 16px -3px rgba(0,0,0,0.89);
+-webkit-box-shadow: 1px 2px 16px -3px rgba(0,0,0,0.89);
+-moz-box-shadow: 1px 2px 16px -3px rgba(0,0,0,0.89);
+}
