@@ -114,7 +114,7 @@ export default function MainNavigation({ open, setOpen }: Props) {
         body: JSON.stringify(body.products),
       }
     );
-    const session = await response.json();
+    const session = await response?.json();
     const result = await stripe?.redirectToCheckout({
       sessionId: session?.id,
     });
@@ -126,7 +126,6 @@ export default function MainNavigation({ open, setOpen }: Props) {
   const [mapData, setMapData] = useState([]);
   useEffect(() => {
     let newData: any = [];
-    console.log(productsData, "check 1");
     productsData?.map((ele: any) => {
       cartProducts?.map((item: any) => {
         if (item.id === ele.id && item.quantity !== 0) {

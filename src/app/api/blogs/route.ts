@@ -1,11 +1,13 @@
 
 import stripe from "stripe";
 import { NextRequest, NextResponse } from "next/server";
+import middleware from "../middleware";
 const keys:any=process.env.NEXT_PUBLIC_STRIPE_SECRET_KEY
 const stripeInstance = new stripe(keys);
 export async function POST(req:any,res:any) {
+  await middleware(req)
     try {
-       const body = await req.json()
+      const body = await req.json()
        
         if(body)
          { 
