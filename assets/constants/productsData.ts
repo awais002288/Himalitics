@@ -10,7 +10,7 @@ export const productsData = [
         title1: "Sages Of The Ages® Pure Himalayan",
         title2: "Shilajit Resin - 30 Grams",
         image: silajeetImage?.src,
-        url:"check.jpg",
+        url:"https://github.com/awais002288/Himalitics/blob/main/assets/images/check.jpg?raw=true",
         oldPrice: 100.00,
         category: "Health",
         sku: "SKU-1991-BD",
